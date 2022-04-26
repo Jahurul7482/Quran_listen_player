@@ -1,11 +1,18 @@
+*
+{
+	transition: .8s all ease;
+}
+
 body
 {
 	font-family: Arial, helvetica, sans-serif;
+	height: 100vh;
+	overflow: hidden;
 	color: whitesmoke;
 }
 .player
 {
-	height: 95vh;
+	height: 90vh;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -13,6 +20,8 @@ body
 }
 .wrapper
 {
+	height: 85vh;
+	position: relative;
 	border: 1px solid transparent;
 	padding: 30px;
 	border-radius: 20px;
@@ -219,7 +228,7 @@ i.fa-step-backward
 {
 	height: 70px;
 	display: flex;
-	justify-content: center;
+	justify-content: baseline;
 	align-items: center;
 }
 .loader
@@ -227,10 +236,12 @@ i.fa-step-backward
 {
 	background: #f1f1f1;
 	height: 150px;
+	position: absolute;
 	width: 10px;
+	bottom: 20vh;
 	border-radius: 50px;
 	margin: 0px 50px;
-	animation: animate 1.4s linear infinite;
+	animation: animate 1s linear infinite;
 }
 @-webkit-keyframes animate{
 	50% {height:20%;
@@ -259,6 +270,7 @@ i.fa-step-backward
 }
 .stroke:nth-child(1)
 {
+	right: 70%;
 -webkit-animation-delay: 0s;
 -moz-animation-delay: 0s;
 -ms-animation-delay: 0s;
@@ -268,6 +280,7 @@ animation-delay: 0s;
 }
 .stroke:nth-child(2)
 {
+	left: 70%;
 	-webkit-animation-delay: 0.3s;
 	-moz-animation-delay: 0.3s;
 	-ms-animation-delay: 0.3s;
@@ -276,6 +289,7 @@ animation-delay: 0s;
 }
 .stroke:nth-child(3)
 {
+	right: 74%;
 	-webkit-animation-delay: 0.6s;
 	-moz-animation-delay: 0.6s;
 	-ms-animation-delay: 0.6s;
@@ -284,6 +298,7 @@ animation-delay: 0s;
 }
 .stroke:nth-child(4)
 {
+	left: 74%;
 	-webkit-animation-delay: 0.9s;
 	-moz-animation-delay: 0.9s;
 	-ms-animation-delay: 0.9s;
@@ -292,6 +307,7 @@ animation-delay: 0s;
 }
 .stroke:nth-child(5)
 {
+	right: 78%;
 	-webkit-animation-delay: 0.6s;
 	-moz-animation-delay: 0.6s;
 	-ms-animation-delay: 0.6s;
@@ -300,6 +316,7 @@ animation-delay: 0s;
 }
 .stroke:nth-child(6)
 {
+	left: 78%;
 	-webkit-animation-delay: 0.3;
 	-moz-animation-delay: 0.3;
 	-ms-animation-delay: 0.3;
@@ -308,6 +325,16 @@ animation-delay: 0s;
 }
 .stroke:nth-child(7)
 {
+	right: 82%;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-ms-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0s;	
+}
+.stroke:nth-child(8)
+{
+	left: 82%;
 	-webkit-animation-delay: 0s;
 	-moz-animation-delay: 0s;
 	-ms-animation-delay: 0s;
